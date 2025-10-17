@@ -10,6 +10,23 @@
     width: 100%;
 }
 
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+nav div ul li a {
+    transition: 0.10s;
+    display: flex;
+    margin-right: 20px ;
+    border-radius: 50px ;
+}
+
+nav div ul li a:hover {
+    color: #ffffff ;
+    background: #00000072 ;
+    border-radius: 10px ;
+}
+
 /* LOGO */
 .navbar-brand {
     height: 60px ;
@@ -101,19 +118,4 @@
 }
 
 /*  */
-.navbar.hidden {
-    transform: translateY(-100%);
-}
 
-nav div ul li a {
-    transition: 0.10s;
-    display: flex;
-    margin-right: 20px ;
-    border-radius: 50px ;
-}
-
-nav div ul li a:hover {
-    color: #ffffff ;
-    background: #00000072 ;
-    border-radius: 10px ;
-}
