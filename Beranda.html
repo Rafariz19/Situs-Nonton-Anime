@@ -3,69 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nimendo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/Beranda.css">
 </head>
 <body>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <!-- NAVBAR 1-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container d-flex justify-content-between align-items-center">
+      <!--LOGO-->
+      <a class="navbar-brand fw-bold logo" href="index.html">
+        <img src="assets/Nimendo2.png" alt="Nimendo">
+      </a>
+      <!--SEARCH BAR-->
+      <div class="search-container" >
+        <input class="input-container" type="text" placeholder="Cari Anime...">
+        <button id="search-btn"><img src="assets/search.png" alt="cari"></button>
+      </div>
+      <!--HUMBERGER ICON-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!--NAVBAR 2-->
+  <nav class="navbare navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Nimendo</a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#fasilitas">Jadwal Tayang</a></li>
-          <li class="nav-item"><a class="nav-link" href="galeri.html">Riwayat nonton</a></li>
-          <li class="nav-item"><a class="nav-link" href="#lokasi">Genre List</a></li>
-          <li class="nav-item"><a class="nav-link" href="#lokasi">Lapor Link Rusak</a></li>
-            <li class="nav-item"><a class="nav-link" href="kontak.html">Info</a></li>
-          <li class="nav-item"><a class="nav-link" href="team.html" target="_blank">Tentang</a></li>
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="Beranda.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="Jadtay.html">Jadwal Tayang</a></li>
+          <li class="nav-item"><a class="nav-link" href="Riwnon.html">Riwayat nonton</a></li>
+          <li class="nav-item"><a class="nav-link" href="Gelis.html">Genre List</a></li>
+          <li class="nav-item"><a class="nav-link" href="Lalisak.html">Lapor Link Rusak</a></li>
+          <li class="nav-item"><a class="nav-link" href="Info.html">Info</a></li>
+          <li class="nav-item"><a class="nav-link" href="Tentang.html" target="_blank">Tentang</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header class="hero text-white d-flex align-items-center">
-    <div class="container text-center">
-      <h1 class="fw-bold">Pantai Slopeng</h1>
-      <p class="lead">Pesona pasir putih dan budaya pesisir Madura</p>
-      <a href="galeri.html" target="_blank" class="btn btn-light mt-3">Lihat Galeri Lengkap</a>
-    </div>
-  </header>
 
-  <main class="container my-5">
-    <section id="about">
-      <h2>Tentang</h2>
-      <p>Pantai Slopeng berada di Kecamatan Dasuk, Sumenep. Cocok untuk menikmati sunrise, memotret perahu nelayan, dan wisata keluarga.</p>
-      <a href="tentang.html" target="_blank" class="btn btn-outline-primary">Baca Selengkapnya</a>
-    </section>
-
-    <hr>
-
-    <section id="fasilitas">
-      <h2>Fasilitas & Harga</h2>
-      <p>Parkir, warung, gazebo, spot foto.</p>
-      <p><strong>Harga tiket masuk:</strong> Rp 10.000/orang (dewasa), Rp 5.000 (anak-anak).</p>
-      <a href="fasilitas.html" target="_blank" class="btn btn-outline-primary">Detail Fasilitas</a>
-    </section>
-
-    <hr>
-
-    <hr>
-
-    <section id="lokasi">
-      <h2>Lokasi</h2>
-      <iframe src="https://www.google.com/maps?q=Pantai+Slopeng+Sumenep&output=embed" width="100%" height="300"></iframe>
-      <a href="lokasi.html" target="_blank" class="btn btn-outline-primary mt-2">Lihat Peta Lengkap</a>
-    </section>
-  </main>
 
   <footer class="bg-dark text-white text-center py-3">
-    <p>© 2025 Website Kelompok | Pantai Slopeng</p>
+    <p>© 2025 Nimendo</p>
   </footer>
 
+    <script src="assets/Beranda.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

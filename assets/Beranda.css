@@ -1,3 +1,119 @@
+/* NAVBAR 1 */
 .navbar {
+    background: black!important;
+    width: 100%;
+}
+
+/* NAVBAR 2 */
+.navbare {
     background: linear-gradient(to right, #223767, #4A6DAE, #49C2FE) !important;
+    width: 100%;
+}
+
+/* LOGO */
+.navbar-brand {
+    height: 60px ;
+    padding: 0px;
+    width: auto ;
+    display: flex ;
+    object-fit: contain ;
+    vertical-align: middle ;
+}
+
+/* Aturan untuk SEARCH BAR */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: rgb(120, 120, 120);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.search-container input::placeholder {
+  color: rgb(180, 180, 180);
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background-color: rgb(120, 120, 120);
+  padding: 5px 15px;
+  width: 250px;
+  font-size: 16px;
+  border-radius: 25px 0 0 25px; /* <-- radius kiri saja */
+}
+
+.search-container button {
+  border: none;
+  background-color: #223767;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0; /* <-- radius kanan saja */
+}
+
+.search-container button img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.search-container input:focus {
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* KHUSUS UNTUK LAYAR YANG KECIL BAIK DI MOBILE ATAU JIKA LAYAR NYA DI PISAH DUA: */
+/* /// */
+/* Aturan untuk NAVBAR 1 dan 2  */
+@media (max-width: 992px) { /* aktif pas layar medium ke bawah */
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Aturan untuk LOGO */
+@media (max-width: 992px) {
+  .logo {
+    display: none;
+  }
+}
+
+/* Aturan untuk SEARCH BAR dan ICON HUMBERGER */
+@media (max-width: 992px) {
+  .search-container {
+    order: 1;
+  }
+  .search-container input {
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .search-container.active input {
+    width: 180px;
+    padding: 5px 10px;
+    opacity: 1;
+  }
+}
+
+/*  */
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+
+nav div ul li a {
+    transition: 0.10s;
+    display: flex;
+    margin-right: 20px ;
+    border-radius: 50px ;
+}
+
+nav div ul li a:hover {
+    color: #ffffff ;
+    background: #00000072 ;
+    border-radius: 10px ;
 }
